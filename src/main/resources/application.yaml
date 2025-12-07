@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: rideshare
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/rideshare_db
+
+server:
+  port: 8081
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
