@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 server:
   port: 8081
 
@@ -21,3 +22,20 @@ logging:
 jwt:
   secret: "THIS_IS_A_SECRET_KEY_CHANGE_IT_IN_PRODUCTION_1234567890"
   expiration: 86400000   # 24 hours in ms
+=======
+spring:
+  application:
+    name: rideshare
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/rideshare_db
+
+server:
+  port: 8081
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+>>>>>>> 7e00db8e53b42924dcdd659b6b91bb4383523f46

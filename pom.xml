@@ -8,11 +8,19 @@
 		<version>4.0.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+<<<<<<< HEAD
 	<groupId>com.example</groupId>
 	<artifactId>rideshare</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>rideshare</name>
 	<description>Demo project for Spring Boot</description>
+=======
+	<groupId>com.pranav</groupId>
+	<artifactId>rideshare</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>rideshare</name>
+	<description>RideShare SpringBoot Project</description>
+>>>>>>> 7e00db8e53b42924dcdd659b6b91bb4383523f46
 	<url/>
 	<licenses>
 		<license/>
@@ -30,6 +38,7 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+<<<<<<< HEAD
         <!-- Spring Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -47,6 +56,50 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
+=======
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webmvc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webmvc-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+>>>>>>> 7e00db8e53b42924dcdd659b6b91bb4383523f46
 
         <!-- JWT (JJWT) -->
         <dependency>
@@ -54,14 +107,20 @@
             <artifactId>jjwt-api</artifactId>
             <version>0.11.5</version>
         </dependency>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7e00db8e53b42924dcdd659b6b91bb4383523f46
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-impl</artifactId>
             <version>0.11.5</version>
             <scope>runtime</scope>
         </dependency>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7e00db8e53b42924dcdd659b6b91bb4383523f46
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt-jackson</artifactId>
@@ -69,6 +128,7 @@
             <scope>runtime</scope>
         </dependency>
 
+<<<<<<< HEAD
         <!-- Validation (Jakarta Bean Validation) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -89,12 +149,40 @@
             <scope>test</scope>
         </dependency>
 	</dependencies>
+=======
+    </dependencies>
+>>>>>>> 7e00db8e53b42924dcdd659b6b91bb4383523f46
 
 	<build>
 		<plugins>
 			<plugin>
+<<<<<<< HEAD
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+=======
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<annotationProcessorPaths>
+						<path>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</path>
+					</annotationProcessorPaths>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
+>>>>>>> 7e00db8e53b42924dcdd659b6b91bb4383523f46
 			</plugin>
 		</plugins>
 	</build>
